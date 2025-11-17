@@ -1,0 +1,110 @@
+.challenge-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-header {
+  padding: 20px;
+  color: white;
+}
+
+.challenge-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.challenge-body {
+  padding: 20px;
+}
+
+.challenge-description {
+  color: #666;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.challenge-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item .label {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.info-item .value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.info-item .value.difficulty {
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.info-item .value.difficulty:contains('High') {
+  background: #FFE5E5;
+  color: #FF6B6B;
+}
+
+.challenge-card:nth-child(1) .value.difficulty {
+  background: #FFE5E5;
+  color: #FF6B6B;
+}
+
+.challenge-card:nth-child(2) .value.difficulty {
+  background: #E0F7F6;
+  color: #4ECDC4;
+}
+
+.challenge-card:nth-child(3) .value.difficulty {
+  background: #FFF9E6;
+  color: #F7B731;
+}
+
+.select-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.select-btn:active {
+  transform: scale(0.98);
+}

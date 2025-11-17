@@ -1,0 +1,55 @@
+.day-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  border-color: #667eea;
+}
+
+.day-number {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.day-card h3 {
+  margin: 12px 0 8px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.exercises-count {
+  color: #999;
+  font-size: 13px;
+  margin: 8px 0 12px 0;
+}
+
+.view-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #667eea;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #667eea;
+  color: white;
+}
