@@ -64,6 +64,7 @@ function App() {
           day={selectedChallenge.days[selectedDay]}
           dayNumber={selectedDay}
           challengeName={selectedChallenge.name}
+          challengeId={selectedChallenge.id}
           onBack={handleBackToChallenge}
         />
       )}

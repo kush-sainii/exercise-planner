@@ -1,18 +1,19 @@
 .day-card {
-  background: white;
+  background: #0f3460;
   border-radius: 10px;
   padding: 16px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 2px solid transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #1a5276;
 }
 
 .day-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   border-color: #667eea;
+  background: #1a4d7a;
 }
 
 .day-number {
@@ -28,28 +29,29 @@
 
 .day-card h3 {
   margin: 12px 0 8px 0;
-  color: #333;
+  color: white;
   font-size: 16px;
 }
 
 .exercises-count {
-  color: #999;
+  color: #7a8fa3;
   font-size: 13px;
   margin: 8px 0 12px 0;
 }
 
 .view-btn {
-  background: #f0f0f0;
+  background: #667eea;
   border: none;
   padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
-  color: #667eea;
+  color: white;
   transition: all 0.3s ease;
 }
 
 .view-btn:hover {
-  background: #667eea;
+  background: #764ba2;
   color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 }

@@ -1,15 +1,16 @@
 .challenge-card {
-  background: white;
+  background: #0f3460;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
+  border: 1px solid #1a5276;
 }
 
 .challenge-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .challenge-header {
@@ -28,7 +29,7 @@
 }
 
 .challenge-description {
-  color: #666;
+  color: #b0b0b0;
   margin: 0 0 20px 0;
   font-size: 14px;
   line-height: 1.5;
@@ -48,14 +49,14 @@
 
 .info-item .label {
   font-size: 12px;
-  color: #999;
+  color: #7a8fa3;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .info-item .value {
   font-size: 16px;
-  color: #333;
+  color: #e0e0e0;
   font-weight: 600;
   margin-top: 4px;
 }

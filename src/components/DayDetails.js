@@ -1,14 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './DayDetails.css';
 
-const DayDetails = ({ day, dayNumber, challengeName, onBack }) => {
+const DayDetails = ({ day, dayNumber, challengeName, challengeId, onBack, onUpdateExercises, completedExercises }) => {
   const [checkedExercises, setCheckedExercises] = useState({});
 
+  // Load saved exercises on mount
+  useEffect(() => {
+    const storageKey = `exercises_${challengeId}_day_${dayNumber}`;
+    const savedExercises = localStorage.getItem(storageKey);
+    if (savedExercises) {
+      setCheckedExercises(JSON.parse(savedExercises));
+    }
+  }, [challengeId, dayNumber]);
+
   const toggleExercise = (index) => {
-    setCheckedExercises(prev => ({
-      ...prev,
-      [index]: !prev[index]
-    }));
+    const updatedExercises = {
+      ...checkedExercises,
+      [index]: !checkedExercises[index]
+    };
+    setCheckedExercises(updatedExercises);
+    
+    // Save to localStorage
+    const storageKey = `exercises_${challengeId}_day_${dayNumber}`;
+    localStorage.setItem(storageKey, JSON.stringify(updatedExercises));
+    
+    // Update parent component
+    onUpdateExercises?.(storageKey, updatedExercises);
   };
 
   const completedCount = Object.values(checkedExercises).filter(Boolean).length;

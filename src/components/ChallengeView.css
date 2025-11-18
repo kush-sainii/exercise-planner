@@ -3,11 +3,12 @@
 }
 
 .challenge-view-header {
-  background: white;
+  background: #0f3460;
   padding: 30px 20px;
   border-radius: 12px;
   margin-bottom: 30px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #1a5276;
 }
 
 .back-btn {
@@ -36,10 +37,11 @@
 .challenge-view-header h1 {
   margin: 15px 0 10px 0;
   font-size: 36px;
+  color: white;
 }
 
 .challenge-duration {
-  color: #666;
+  color: #b0b0b0;
   font-size: 16px;
   margin: 0;
 }

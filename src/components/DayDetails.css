@@ -1,8 +1,9 @@
 .day-details {
-  background: white;
+  background: #0f3460;
   border-radius: 12px;
   overflow: hidden;
   margin: 20px;
+  border: 1px solid #1a5276;
 }
 
 .day-header {
@@ -44,20 +45,20 @@
 
 .day-info {
   padding: 30px 20px;
-  background: #f8f9fa;
-  border-bottom: 1px solid #e0e0e0;
+  background: #1a4d7a;
+  border-bottom: 1px solid #2a5f8f;
 }
 
 .day-info h2 {
   margin: 0 0 20px 0;
-  color: #333;
+  color: white;
   font-size: 24px;
 }
 
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: #e0e0e0;
+  background: #2a5f8f;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -71,7 +72,7 @@
 
 .progress-text {
   margin: 0;
-  color: #666;
+  color: #b0b0b0;
   font-size: 14px;
   font-weight: 600;
 }
@@ -85,16 +86,16 @@
   gap: 15px;
   padding: 16px;
   margin-bottom: 12px;
-  background: #f8f9fa;
+  background: #1a4d7a;
   border-radius: 8px;
   border-left: 4px solid #667eea;
   transition: all 0.3s ease;
 }
 
 .exercise-item.completed {
-  background: #e8f5e9;
+  background: #2d5a3d;
   border-left-color: #4caf50;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .exercise-checkbox {
@@ -118,7 +119,7 @@
 
 .exercise-main h3 {
   margin: 0;
-  color: #333;
+  color: white;
   font-size: 16px;
   font-weight: 600;
 }
@@ -158,7 +159,7 @@
 }
 
 .detail {
-  color: #666;
+  color: #b0b0b0;
   font-size: 13px;
   font-weight: 500;
 }
@@ -166,10 +167,11 @@
 .completion-message {
   margin: 20px;
   padding: 20px;
-  background: #e8f5e9;
+  background: #2d5a3d;
   border-radius: 8px;
-  color: #2e7d32;
+  color: #4caf50;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+  border: 1px solid #4caf50;
 }
